@@ -65,7 +65,7 @@ npm run check   # type-check, test and build
 | `ui-src/` | The overlay |
 | `scripts/build.mjs` | Bundles the widget and inlines the overlay into `dist/index.html` |
 
-`manifest.json` uses the placeholder ID `figjam-code-ref`. Publishing the widget replaces it with the ID Figma assigns.
+`manifest.json` holds the widget's Figma Community ID, `1703111892180213963`. Keep it when you publish an update, so Figma treats the upload as a new version of the same widget.
 
 ## License
 
