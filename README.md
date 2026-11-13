@@ -2,6 +2,8 @@
 
 A FigJam widget that links a diagram element to the code behind it. You paste a GitHub permalink into the widget. It fetches those lines, and clicking the widget shows them in an overlay next to it.
 
+![A Code Reference chip for expressjs/express lib/application.js:598-606, with its overlay open next to it showing the highlighted function and the buttons Open in GitHub, Refresh and Edit](docs/images/overlay.png)
+
 ## How it works
 
 - Each widget holds one permalink. On the canvas it shows the file name and line range, the repository, and the first 7 characters of the commit.
@@ -28,6 +30,8 @@ In the Figma desktop app, open a FigJam board. In the main menu, choose **Widget
 3. Click the widget, paste the URL, and choose **Fetch**.
 
 To add another reference, copy and paste the widget. Each copy holds its own permalink.
+
+![The overlay of an empty chip: a field for the GitHub permalink, Fetch and Cancel buttons, and a field for a GitHub token](docs/images/add-reference.png)
 
 ## Private repositories
 
