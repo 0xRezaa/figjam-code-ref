@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Code reference</title>
+    <style>
+      /* STYLES */
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="heading">
+        <div id="title"></div>
+        <div id="subtitle" class="muted"></div>
+      </div>
+      <div id="actions" class="row" hidden>
+        <button type="button" id="open">Open in GitHub</button>
+        <button type="button" id="refresh">Refresh</button>
+        <button type="button" id="edit">Edit</button>
+      </div>
+    </header>
+    <div id="error" class="error" role="alert" hidden></div>
+    <main id="view" hidden>
+      <div id="notice" class="muted" hidden></div>
+      <div class="code">
+        <pre id="gutter" aria-hidden="true"></pre>
+        <pre><code id="code" class="hljs"></code></pre>
+      </div>
+    </main>
+    <form id="edit-form" hidden>
+      <label for="permalink">GitHub permalink</label>
+      <input
+        id="permalink"
+        type="url"
+        required
+        autocomplete="off"
+        spellcheck="false"
+        placeholder="https://github.com/owner/repo/blob/<commit>/path/file.ts#L10-L20"
+      />
+      <p class="muted">
+        On GitHub, select the lines and press <kbd>y</kbd> to pin the URL to
+        the commit, then copy it.
+      </p>
+      <div class="row">
+        <button type="submit" id="fetch" class="primary">Fetch</button>
+        <button type="button" id="cancel">Cancel</button>
+      </div>
+      <section class="token">
+        <h2>GitHub token</h2>
+        <p class="muted">
+          Needed for private repositories. The token is stored on this computer
+          for your Figma account and is never written to the board. The fetched
+          lines are written to the board.
+        </p>
+        <div id="token-set" class="row" hidden>
+          <span>Token saved.</span>
+          <button type="button" id="token-clear">Remove token</button>
+        </div>
+        <div id="token-unset" class="row" hidden>
+          <input
+            id="token"
+            type="password"
+            autocomplete="off"
+            placeholder="github_pat_…"
+          />
+          <button type="button" id="token-save">Save token</button>
+        </div>
+      </section>
+    </form>
+    <script>
+      /* SCRIPT */
+    </script>
+  </body>
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "Code Reference",
+  "id": "figjam-code-ref",
+  "api": "1.0.0",
+  "widgetApi": "1.0.0",
+  "editorType": ["figjam", "figma"],
+  "containsWidget": true,
+  "main": "dist/code.js",
+  "ui": "dist/index.html",
+  "documentAccess": "dynamic-page",
+  "permissions": [],
+  "networkAccess": {
+    "allowedDomains": ["https://api.github.com"]
+  }
+}
